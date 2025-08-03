@@ -1,0 +1,81 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Mozilla+Headline:wght@200..700&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+
+body{
+    margin: 0px;
+}
+
+*{
+    font-family: 'Roboto', Times, serif;
+}
+
+
+
+
+
+
+
+header{
+    background-color: rgb(164, 149, 149);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    
+    
+}
+.links-container a {
+    text-decoration: none;
+    margin: 0px 20px;
+    font-weight: 1000;
+    color: black;
+}
+
+.links-container a:hover{
+    color : rgb(219, 93, 114);
+}
+.caver {
+    background-image: url(./img2.jpg);
+    
+    height: 500PX;
+    background-position: center;
+    color: white;
+    padding: 200PX;
+
+}
+.caver p {
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.caver button{
+    background-color:aqua;
+    border: transparent;
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 8px 15px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 2s;
+}
+.caver button:hover{
+    background-color:gray;
+    transform: scale(1.1 , 1.1);
+}
+.link{
+    margin-left: 20px;
+}
+.link a{
+    font-size: 40px;
+    color: black;
+    
+
+}
+.link a:hover{
+    color: gray;
+}
