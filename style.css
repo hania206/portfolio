@@ -1,81 +1,164 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Mozilla+Headline:wght@200..700&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-
-body{
-    margin: 0px;
+body {
+  margin: 0px;
 }
 
-*{
-    font-family: 'Roboto', Times, serif;
+* {
+  font-family: "Roboto Mono", monospace;
 }
 
+/* header ::::::  */
 
-
-
-
-
-
-header{
-    background-color: rgb(164, 149, 149);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 15px;
-    
-    
+header {
+  background-color: #00838f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  color: white;
 }
+
 .links-container a {
-    text-decoration: none;
-    margin: 0px 20px;
-    font-weight: 1000;
-    color: black;
+  text-decoration: none;
+  margin: 0px 15px;
+  font-weight: 900;
+  color: white;
 }
 
-.links-container a:hover{
-    color : rgb(219, 93, 114);
+.links-container a:hover {
+  color: black;
 }
-.caver {
-    background-image: url(./img2.jpg);
-    
-    height: 500PX;
-    background-position: center;
-    color: white;
-    padding: 200PX;
 
+/* cover :::  */
+
+.cover {
+  background-image: url("./cover.jpg");
+  height: 400px;
+  background-position: center;
+  color: white;
+  padding: 200px;
 }
-.caver p {
-    font-size: 60px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+
+.cover h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.caver button{
-    background-color:aqua;
+
+.cover button {
+    background-color: #00838f;
     border: transparent;
-    color: black;
-    font-weight: 400;
-    font-size: 15px;
-    padding: 8px 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 8px 12px;
     margin-bottom: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 2s;
 }
-.caver button:hover{
-    background-color:gray;
+
+.cover button:hover{
+    background-color: #024147;
     transform: scale(1.1 , 1.1);
 }
-.link{
-    margin-left: 20px;
-}
-.link a{
-    font-size: 40px;
-    color: black;
-    
 
+.social-media-container {
+
+    margin-left: 15px ;
 }
-.link a:hover{
-    color: gray;
+
+.social-media-container a{
+  font-size: 30px;
+  color: white;
 }
+
+.social-media-container a:hover{
+    color: black;
+}
+
+
+/* ////// services :::  */
+
+.title {
+  text-align: center;
+}
+
+.card {
+
+  width: 25%;
+  height: 300px;
+   margin: 0px 30px 100px 0px;
+   cursor: pointer;
+   transition: 1s;
+   box-shadow: 1px 1px 30px black;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.card:hover{
+   transform: scale(1.1,1.1);
+}
+
+.logo {
+  text-align: center;
+  font-size: 100px;
+}
+
+.card h4 {
+  
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.info{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0px 8px;
+}
+
+
+.cards-service-container{
+  
+  display: flex;
+  /* x ::  */
+  flex-direction: row;
+   /* flex-direction: column;  ==> y */  
+ align-items: center;
+justify-content: center;
+margin-top: 200px;
+}
+
+.logo {
+  transition: 1s;
+}
+
+.card:hover .logo {
+ transform: rotate(360deg);
+}
+
+/* project ::  */
+.card-projetc{
+
+  width: 20%;
+  height: 300px;
+  margin: 50px 20px;
+  box-shadow: 1px 1px 30px black;
+}
+
+img {
+  width: 100% ; 
+  height: 180px;
+}
+
+.card-project-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
